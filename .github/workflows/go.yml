@@ -23,7 +23,7 @@ jobs:
             apt-get update
             apt-get install -y build-essential bash openssl go
         env: |
-           $PATH:/usr/local/go/bin
+           PATH: $PATH:/usr/local/go/bin
         run: |        
             rm go$GOLANG_VERSION.src.tar.gz
             go build ./...
