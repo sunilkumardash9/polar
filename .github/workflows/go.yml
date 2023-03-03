@@ -18,7 +18,7 @@ jobs:
     - uses: uraimo/run-on-arch-action@v2
       with:
         arch: aarch64
-        distro: fedora_latest 
+        distro: alpine_latest 
 
         install: |
               wget https://golang.org/dl/go1.20.1.linux-arm64.tar.gz
