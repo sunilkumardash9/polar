@@ -20,8 +20,8 @@ jobs:
         arch: aarch64
         distro: ubuntu_latest 
         install: |
-            sudo apt-get update
-            sudo apt install golang-go 
+            apt-get update
+            apt install golang-go 
 
            
         run: |  
