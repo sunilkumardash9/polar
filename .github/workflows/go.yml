@@ -18,10 +18,11 @@ jobs:
     - uses: uraimo/run-on-arch-action@v2
       with:
         arch: aarch64
-        distro: ubuntu_latest 
+        distro: alpine_latest 
         install: |
-            apt-get update
-            apt install golang-go 
+              wget https://golang.org/dl/go1.20.1.linux-arm64.tar.gz
+              tar -C /usr/local -xzf go1.17.2.linux-amd64.tar.gz
+
 
            
         run: |  
