@@ -24,7 +24,6 @@ jobs:
               wget https://golang.org/dl/go1.20.1.linux-arm64.tar.gz
               tar -C /usr/local -xzf go1.20.1.linux-arm64.tar.gz        
         run: |  
-            export PATH=$PATH:/usr/local/go/bin
             go version
 
             
