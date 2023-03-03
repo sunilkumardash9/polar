@@ -17,8 +17,8 @@ jobs:
     - uses: actions/checkout@v3
     - uses: uraimo/run-on-arch-action@v2
       with:
-        arch: aarch64
-        distro: fedora_latest 
+        arch: armv7
+        distro: buster
         run: go test -v ./...
 
 
