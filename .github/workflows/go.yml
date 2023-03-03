@@ -11,14 +11,14 @@ on:
 jobs:
  
   build-and-test:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v3
     - uses: uraimo/run-on-arch-action@v2
       with:
         arch: aarch64
-        distro: ubuntu_latest 
+        distro: fedora_latest 
         run: go test -v ./...
 
 
