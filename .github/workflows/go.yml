@@ -19,14 +19,13 @@ jobs:
       with:
         arch: aarch64
         distro: alpine_latest 
-        env: |
-          GOLANG_VERSION:1.20.1
+
         install: |
               wget https://golang.org/dl/go1.20.1.linux-arm64.tar.gz
               tar -C /usr/local -xzf go1.20.1.linux-arm64.tar.gz        
         run: |  
             export PATH=$PATH:/usr/local/go/bin
-            rm go$GOLANG_VERSION.src.tar.gz
+            rm go1.20.1.src.tar.gz
             go version
 
             
