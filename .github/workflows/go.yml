@@ -20,8 +20,8 @@ jobs:
         arch: aarch64
         distro: ubuntu_latest 
         install: |
-            apt-get update
-            apt-get install -y build-essential bash openssl go
+            sudo apt-get update
+            sudo apt install golang-go 
 
            
         run: |  
